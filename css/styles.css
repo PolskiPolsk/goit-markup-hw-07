@@ -777,3 +777,134 @@ text-decoration: none;
     
 
 }
+/* seting for homework 7*/
+
+/* 480px*/
+@media screen and (max-width: 480px) {
+
+    * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+.container{
+        min-width: 320px;
+        max-width: 480px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto
+    
+    
+}
+.page-header{
+        width: 480px;
+        height: 70px;
+        display:flex;
+}
+
+   
+.section {
+        background-color: var(--NAVY-BLUE);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/goit-markup-hw-04/images/people-office.jpg);
+        height: 490px;
+        display:flex;
+        
+       
+    }
+
+
+.effective {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        display: flex;
+
+}
+.solution {
+        color: var(--WHITE, #FFF);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+        width: 320px;
+
+}
+.button {
+    background-color: var(--IRIS);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    color: var(--WHITE);
+    cursor: pointer;
+    display: inline-flex;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 16px 32px;
+    gap: 10px;
+    align-items: inline-flex;
+
+}
+
+
+
+.list-strategy{
+
+    display: inline-flex;
+    flex-direction: column;
+    gap: 72px;
+   
+}
+
+
+.firstpoint{
+    display: flex;
+    width: 440px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.terms{
+    align-self: stretch;
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+.business{
+    align-self: stretch;
+    color: var(--SLATE, #434455);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    
+}
+.list-ourteam{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
