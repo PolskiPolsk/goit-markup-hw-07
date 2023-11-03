@@ -32,14 +32,23 @@
          <address class="address">
                 <ul class="list">
                     <li>
-                        <a href="mailto:info@devstudio.com" class="menu link">info@devstudio.com</a>
+                        <a href="mailto:info@devstudio.com" class="meni link">info@devstudio.com</a>
                     </li>
                     <li>
-                        <a href="tel:+110001111111" class="menu link">+11 (000) 111-11-11</a>
+                        <a href="tel:+110001111111" class="meni link">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
             </address>
         </div>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path 
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd">
+            </path>
+            </svg>
+        </button>
     </header> 
 <main>
     <section class="section">
@@ -123,7 +132,7 @@
                 <img  src="./images/beardman.jpg" alt="Mr Mark Guerrero" width="264" height="260"/>
                 <div class="container-worker">
                     <h3 class="terms-people">Mark Guerrero</h3>
-                    <p class="menu">Product Designer</p>
+                    <p class="meni">Product Designer</p>
 
                     <ul class="socialmediaicons">
 
@@ -165,7 +174,7 @@
                 <img src="./images/smilingguy.jpg" alt="smiling young guy" width="264" height="260"/>
                 <div class="container-worker">
                     <h3 class="terms-people">Tom Ford</h3>
-                    <p class="menu" >Frontend Developer</p>
+                    <p class="meni" >Frontend Developer</p>
 
                     <ul class="socialmediaicons">
                     
@@ -208,7 +217,7 @@
             <img src="./images/prettywoman.jpg" alt="pretty woman" width="264" height="260" />
             <div class="container-worker">
                 <h3 class="terms-people">Camila Garcia</h3>
-                <p class="menu">Marketing</p>  
+                <p class="meni">Marketing</p>  
 
                 <ul class="socialmediaicons">
                 
@@ -251,7 +260,7 @@
             <img src="./images/maningreytshirt.jpg" alt="man in grey shirt" width="264" height="260" />
             <div class="container-worker">
                 <h3 class="terms-people">Daniel Wilson</h3>
-                <p class="menu">UI Designer</p>
+                <p class="meni">UI Designer</p>
 
                 <ul class="socialmediaicons">
                 
@@ -488,11 +497,32 @@
                                 <a href="" class="regulations-of-policy">Privacy Policy</a>    
                         </label>
                     </div>
-                    <button type="submit" class="send">Send</button>
-                </form>
+                 <button type="submit" class="send">Send</button>
+        </form>
     </div>
 </div>
+<div class="menu-container js-menu-container is-open" id="mobile-menu">
+    <button class="menu-toggle js-close-menu button-close" type="button">
+        <svg class="cross" width="16" height="16">
+            <use href="./images/icons.svg#icon-Vector"></use>
+        </svg>
+    </button>
+
+    <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+    </ul>
+</div>
 <script src="./js/modal.js"></script>
+<script 
+    defer 
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous">
+</script>
+<script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>
 
