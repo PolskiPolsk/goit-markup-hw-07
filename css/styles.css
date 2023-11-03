@@ -32,7 +32,7 @@ img{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--IRIS); 
-    margin-right: 76px;
+    margin-right: 70px;
     text-decoration: none;
     display:flex;
     
@@ -83,7 +83,6 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 display: flex;
 gap: 40px;
-
 list-style: none;
 
 
@@ -110,7 +109,7 @@ address{
     font-weight: 400;
 }
 
-.menu{
+.meni{
     color: var(--SLATE);
     font-size: 16px;
     line-height: 1.5;
@@ -120,8 +119,8 @@ address{
         
 
 }
-.menu.link:hover,
-.menu.link:focus {
+.meni.link:hover,
+.meni.link:focus {
     color: var(--OCEAN);
 
 }
@@ -334,7 +333,7 @@ address{
 .nav{
     display: flex;
     align-items: center;
-    padding: 24px 0;
+   
 }
 .section-two{
     padding: 120px 0;
@@ -828,14 +827,82 @@ text-decoration: none;
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: var(--IRIS);
-            margin-left: 76px;
             text-decoration: none;
             gap: 10px 0px;
             display: flex;
-            margin: auto;
-
     }
-
+        
+/*===================================================manu z github stylizacja dla kurwa hamburgera==============================*/
+         
+         
+         .menu .link {
+             padding: 10px;
+             color: inherit;
+             text-decoration: none;
+         }
+    
+         .menu .link:hover,
+         .menu .link:focus {
+             text-decoration: underline;
+         }
+    
+         .menu-toggle {
+             min-height: 40px;
+             min-width: 40px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             margin: 0;
+             padding: 0;
+             background-color: transparent;
+             cursor: pointer;
+             border: none;
+             border-radius: 50%;
+             outline: none;
+         }
+         .menu-toggle:hover,
+         .menu-toggle:focus {
+             background-color: rgba(0, 0, 0, 0.1);
+         }
+    
+         .menu-container {
+             position: fixed;
+             top: 0;
+             left: 0;
+             width: 100vw;
+             height: 100vh;
+             padding: 32px;
+             background-color: #3f51b5;
+             z-index: 999;
+    
+             transform: translateX(100%);
+             transition: transform 250ms ease-in-out;
+         }
+    
+         .menu-container.is-open {
+             transform: translateX(0);
+         }
+    
+         .menu-container .menu-toggle {
+             position: absolute;
+             top: 16px;
+             right: 16px;
+             color: #fff;
+         }
+    
+         .mobile-menu {
+             padding: 0;
+             margin: 0;
+             list-style: none;
+         }
+    
+         .mobile-menu .link {
+             display: block;
+             padding: 10px;
+             color: #fff;
+             text-decoration: none;
+         }
+/*========================konie u góry========================*/
     .link {
         text-decoration: none;
     }
@@ -888,7 +955,7 @@ text-decoration: none;
         letter-spacing: 0.02em;
         gap: 40px;
         list-style: none;
-        display: flex;
+        display: none;
 
     }
 
@@ -917,7 +984,7 @@ text-decoration: none;
         
     }
 
-    .menu {
+    .meni {
         color: var(--SLATE);
         font-size: 16px;
         line-height: 1.5;
@@ -928,8 +995,8 @@ text-decoration: none;
 
     }
 
-    .menu.link:hover,
-    .menu.link:focus {
+    .meni.link:hover,
+    .meni.link:focus {
         color: var(--OCEAN);
 
     }
@@ -1172,8 +1239,8 @@ text-decoration: none;
         border-bottom: 1px solid #e7e9fc;
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
         width: 100%;
-        height: 70px;
         display: flex;
+        height: 50px;
     }
 
     .container {
@@ -1186,7 +1253,7 @@ text-decoration: none;
     .nav {
         display: flex;
         align-items: center;
-        padding: 24px 0;
+        
     }
 
     .section-two {
@@ -1759,6 +1826,9 @@ text-decoration: none;
     img {
         display: block;
     }
+    .menu{
+        display: block;
+    }
 
     .logo {
             font-family: 'Raleway',sans-serif;
@@ -1857,7 +1927,7 @@ text-decoration: none;
         
     }
 
-    .menu {
+    .meni {
         color: var(--SLATE);
         font-size: 16px;
         line-height: 1.5;
@@ -1868,8 +1938,8 @@ text-decoration: none;
 
     }
 
-    .menu.link:hover,
-    .menu.link:focus {
+    .meni.link:hover,
+    .meni.link:focus {
         color: var(--OCEAN);
 
     }
@@ -2602,7 +2672,7 @@ text-decoration: none;
             width:470px;
     }
 .label-with-sub{
-    width:100%;
+    width:300px;
 }
 .mediaicons {
 
@@ -2636,7 +2706,7 @@ text-decoration: none;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         color: var(--WHITE);
-        opacity: 0.3;
+        opacity: 1;
 
 
     }
@@ -2797,7 +2867,7 @@ text-decoration: none;
 
     }
 
-    .menu {
+    .meni {
         color: var(--SLATE);
         font-size: 16px;
         line-height: 1.5;
@@ -2808,8 +2878,8 @@ text-decoration: none;
 
     }
 
-    .menu.link:hover,
-    .menu.link:focus {
+    .meni.link:hover,
+    .meni.link:focus {
         color: var(--OCEAN);
 
     }
@@ -2881,17 +2951,19 @@ text-decoration: none;
     }
 
     .terms {
-        align-self: stretch;
+        display:flex;
+        align-self: flex-start;
         color: var(--NAVY-BLUE, #2E2F42);
         text-align: center;
         font-family: "Roboto";
-        font-size: 36px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: 40px;
         letter-spacing: 0.72px;
         text-transform: capitalize;
         margin: 0;
+        width:267px;
 
 
 
@@ -2913,7 +2985,7 @@ text-decoration: none;
 
 
     .business {
-        width: 396px;
+        display:flex;
         align-self: stretch;
         color: var(--SLATE, #434455);
         font-family: Roboto;
@@ -2922,6 +2994,7 @@ text-decoration: none;
         font-weight: 500;
         line-height: 24px;
         letter-spacing: 0.32px;
+        width: 267px;
     }
 
     .whatwedo {
@@ -2948,6 +3021,9 @@ text-decoration: none;
     .studioteam {
         flex-direction: column;
 
+    }
+    .list-ourteam{
+        gap:30px;
     }
 
     .mark {
@@ -3032,7 +3108,7 @@ text-decoration: none;
 
     .footer {
 
-        height: 456px;
+        height: 312px;
         flex-shrink: 0;
 
     }
@@ -3066,7 +3142,7 @@ text-decoration: none;
     .nav {
         display: flex;
         align-items: center;
-        padding: 24px 0;
+        
     }
 
     .section-two {
@@ -3091,17 +3167,20 @@ text-decoration: none;
         clip: rect(0 0 0 0);
         overflow: hidden;
     }
+    
 
     .list-strategy {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px 10px;
+        gap: 120px 24px;
         justify-content: center;
-    }
+        margin:0; 
+        width:100%;
+        }
 
     .firstpoint {
-        display: flex;
-        width: 300px;
+        display: block;
+        width: 257px;
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: center;
@@ -3112,7 +3191,7 @@ text-decoration: none;
 
     .section-three {
         padding-bottom: 120px;
-        display: none;
+        display: block;
     }
 
     .list-whatwedo {
@@ -3180,13 +3259,14 @@ text-decoration: none;
     }
 
     .square {
-        display: block;
+        display: flex;
         align-items: center;
         justify-content: center;
-        height: 112px;
+        height: 114px;
         background-color: var(--CLOUD);
         border-radius: 4px;
         margin-bottom: 8px;
+        width: 267px;
 
     }
 
@@ -3248,7 +3328,7 @@ text-decoration: none;
     }
 
     .iconlogo {
-        width: 190px;
+        width: 180px;
         height: 90px;
     }
 
@@ -3277,20 +3357,17 @@ text-decoration: none;
     .containerfooter {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        margin: auto;
-        padding: auto;
+        align-items: baseline;
+        
 
     }
 
     .logoandsection {
-        display: block;
-        justify-items: center;
-        flex-direction: column;
-        margin-top: 0;
-        margin-right: 30px;
-        margin-left: 85px;
-        margin-bottom: 80px
+        
+        margin-right: 120px;
+        margin-left: 0px;
+        margin-bottom: 80px;
+        padding: 0px 15px;
     }
 
     .footericons {
@@ -3553,12 +3630,9 @@ text-decoration: none;
     }
 
     .subscribe {
-
-        width: 300px;
-        margin-right: auto;
-        margin-left: 80px;
-        justify-content: center;
-        flex-direction: column;
+        margin-right: 270px;
+        width: 200px;
+        margin-left: 0px;
     }
 
 
@@ -3589,7 +3663,7 @@ text-decoration: none;
 
     .subbutton {
 
-        width: 300px;
+        width: 0px;
         height: 40px;
         display: flex;
         justify-content: center;
