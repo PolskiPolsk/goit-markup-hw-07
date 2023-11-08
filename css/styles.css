@@ -794,10 +794,24 @@ text-decoration: none;
 
 }
 @media screen and (min-width: 320px){
+    
 .container{
         width:320px;
         margin: 0 auto;
         padding: 0 15px;
+    }
+    .page-header{
+        display:flex;
+    }
+         @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+             .selection {
+                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/goit-markup-hw-07/images/Dark-bg.jpg);
+             }
+         }
+    .nav{
+        margin-top: 10px; 
     }
     
     .list-strategy{
@@ -854,23 +868,9 @@ text-decoration: none;
             padding: 27px 0;
             color: var(--NAVY-BLUE);
         }
-
-    .menu-toggle {
-            min-height: 40px;
-            min-width: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 20px;
-            padding: 0;
-            background-color: transparent;
-            cursor: pointer;
-            border: none;
-            border-radius: 50%;
-            outline: none;
-        }
+        
         .footer{
-            height: 332px;
+            height: 570px;
         }
         .logoandsection{
                 display: flex;
@@ -882,69 +882,83 @@ text-decoration: none;
                 margin-bottom:0px
         }
         .link-footer{
+            margin-left: 25%;
             margin-bottom: 16px;
             text-decoration: none
         }
         .mediaicons {
             margin-right: auto;
             margin-left: auto;
-            margin-top: 0px;
-            margin-bottom: 80px;
+            margin-top: 40px;
+            margin-bottom: 40px;
             display:block;
 
           }
-                  .footericons {
-                      font-weight: 500;
-                      font-size: 16px;
-                      line-height: 1.5;
-                      letter-spacing: 0.02em;
-                      color: var(--WHITE);
-                      margin-bottom: 16px;
-                      display: flex;
-                      justify-content: center;
-                  }
+        .footericons {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: var(--WHITE);
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: center;
+         }
                  
-                                  .socialmediafooter {
-                                      display: flex;
-                                      gap: 16px;
-                                      list-style: none;
-                                  }
+        .socialmediafooter {
+        display: flex;
+        gap: 16px;
+        list-style: none;
+        }
 
-                    .subscribe {
-                        width: 100vw;
-                        margin: 0;
-                        display: flex;
-                        justify-content: center;
-                        flex-direction: column;
-                    }
-            .label-in-foot {
-                                            display: none;
-                                            margin: 0px 8px;
-                                        }
-            .subbutton {
-                width: 165px;
-                height: 40px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-family: "Roboto", sans-serif;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 1.5;
-                letter-spacing: 0.04em;
-                color: var(--WHITE);
-                cursor: pointer;
-                background-color: var(--IRIS);
-                border: none;
-                border-radius: 4px;
-                margin: auto;
-                margin-bottom: 16px;
+    .subscribe {
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .label-in-foot {
+      display: flex;
+      margin: 0px 8px;
+      flex-wrap:wrap;
+}
+.containerfooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+    .subbutton {
+  width: 165px;
+  height: 40px;
+  display: flex;
+   justify-content: center;
+    align-items: center;
+   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+   font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+   color: var(--WHITE);
+   cursor: pointer;
+   background-color: var(--IRIS);
+   border: none;
+  border-radius: 4px;
+  margin: auto;
+ margin-bottom: 16px;
             }
         
+        
+        .mobile-menu{
+            display: none;
+        }
         .menu-container{
+            display: none;
+        }
+        .cross{
             display:none;
         }
-        
         
         .list-of-manu{
             display:none;
@@ -958,10 +972,6 @@ text-decoration: none;
         .section-three{
             display:none;
         }
-
-
-
-
 
 }
 @media screen and (min-width: 480px){
@@ -1025,8 +1035,12 @@ text-decoration: none;
             letter-spacing: 0.72px;
             text-transform: capitalize;
             gap: 40px 0px;
+            display:block;
 
         }
+        
+    
+        
 
          .menu .link {
              padding: 10px;
@@ -1069,7 +1083,7 @@ text-decoration: none;
              padding: 32px;
              background-color: var(--WHITE);
              z-index: 999;
-    
+            display: block;
              transform: translateX(100%);
              transition: transform 250ms ease-in-out;
          }
@@ -1246,11 +1260,19 @@ text-decoration: none;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/goit-markup-hw-04/images/people-office.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/goit-markup-hw-07/images/Dark-bg.jpg);
         height:490px;
         display: flex;
         
     }
+
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+              .selection {
+                  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(/goit-markup-hw-07/images/Dark-bg.jpg);
+              }
+            }
 
     .effective {
         justify-content: center;
@@ -1478,7 +1500,7 @@ text-decoration: none;
         border-bottom: 1px solid #e7e9fc;
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
         width: 100%;
-        display: flex;
+        
         
     }
 
@@ -1964,6 +1986,7 @@ text-decoration: none;
         height: 60%;
         border-radius: 50%;
         justify-content: center;
+        display:block;
 
     }
 .label-in-foot {
@@ -2207,6 +2230,13 @@ text-decoration: none;
         display: flex;
         
     }
+         @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+             .selection {
+                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/goit-markup-hw-07/images/people-office.jpg);
+             }
+         }
 
     .effective {
         justify-content: center;
@@ -2924,6 +2954,7 @@ text-decoration: none;
             justify-content: center;
             margin:0px;
             width:470px;
+            flex-wrap:nowrap;
     }
 .label-with-sub{
     width:300px;
@@ -3147,9 +3178,14 @@ text-decoration: none;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/goit-markup-hw-04/images/people-office.jpg);
         height: 490px;
         display: flex;
-
     }
-
+ @media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+     .selection {
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/goit-markup-hw-07/images/people-office.jpg);
+     }
+ }
     .effective {
         justify-content: center;
         flex-direction: column;
